@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motivation Quotes</title>
+    <link rel="stylesheet" href="./assets/styles/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100&family=Pacifico&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="quote-container"></div>
-    <div id="author-container"></div>
-
-    <script type="module" src="quotesAPI.js"></script>
-    <script type="module" src="script.js"></script>
+    <div class="main-container">
+        <div class="container-box">
+            <div id="quote-container"></div>
+            <div id="author-container"></div>
+        </div>
+    </div>
+    <div class="container-button">
+        <div id="button">
+            <button class="button-56" onclick="refreshQuote()">New Quote</button>
+        </div>
+    </div>
+    <script type="module" src="./quotesAPI.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
+
+
